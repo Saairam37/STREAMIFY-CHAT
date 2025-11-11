@@ -1,28 +1,153 @@
-<div align="center"><!-- LOGO --><img src="frontend/public/language.png" alt="Streamify Logo" width="100" /><!-- TITLE --><h1 style="border-bottom: none;"><b>✨ Streamify Chat ✨</b></h1><!-- SUBTITLE --><p>A Full-Stack MERN (MongoDB, Express, React, Node.js) application built for real-time language exchange. Connect with users worldwide via instant chat and high-definition 1-on-1 video calls.</p><br /><!-- SCREENSHOT --><img src="frontend/public/screenshot-for-readme.png" alt="Streamify Project Banner" /></div>🚀 About The ProjectStreamify is more than just a chat app; it's a dedicated platform for language learners. The core idea is to connect people based on their native language and the language they want to learn.Users can create a detailed profile, get recommendations for language partners, send friend requests, and start practicing immediately. The entire real-time communication suite—from instant messaging to HD video calls—is powered by the Stream API, ensuring a scalable and reliable experience.<br />Core Features🔐 Secure Authentication: Full JWT (JSON Web Token) authentication flow with signup, login, and protected routes.👤 Custom Onboarding: Users set up their profile with a bio, location, and—most importantly—their native and learning languages.🤝 Smart User Discovery: The homepage recommends other users who are native speakers of the language you're learning.❤️ Friend Request System: Connect with other learners by sending and accepting friend requests.💬 Real-time Chat: Instant 1-on-1 messaging powered by Stream Chat, complete with typing indicators, read receipts, and reactions.📹 HD Video Calling: Seamlessly initiate 1-on-1 video calls directly from the chat window, built with Stream Video SDK.🎨 32 Unique Themes: A theme selector (powered by DaisyUI and Zustand) allows users to customize their UI from 32 different color palettes.⚡ Modern Tech Stack: Built with a fully modern frontend using Vite, TanStack Query for server state, and Zustand for global client state.🛠️ Built WithThis project is built with a modern MERN stack and utilizes powerful third-party APIs for its core functionality.FrontendReact<img src="https://www.google.com/search?q=https://img.shields.io/badge/-React-61DAFB%3Fstyle%3Dfor-the-badge%26logo%3Dreact%26logoColor%3Dblack" />Vite<img src="https://www.google.com/search?q=https://img.shields.io/badge/-Vite-646CFF%3Fstyle%3Dfor-the-badge%26logo%3Dvite%26logoColor%3Dwhite" />Stream Chat SDK<img src="https://www.google.com/search?q=https://img.shields.io/badge/-Stream%2520Chat-005FFF%3Fstyle%3Dfor-the-badge%26logo%3Dstream%26logoColor%3Dwhite" />Stream Video SDK<img src="https://www.google.com/search?q=https://img.shields.io/badge/-Stream%2520Video-005FFF%3Fstyle%3Dfor-the-badge%26logo%3Dstream%26logoColor%3Dwhite" />TanStack Query<img src="https://www.google.com/search?q=https://img.shields.io/badge/-TanStack%2520Query-FF4154%3Fstyle%3Dfor-the-badge%26logo%3Dreactquery%26logoColor%3Dwhite" />Zustand<img src="https://www.google.com/search?q=https://img.shields.io/badge/-Zustand-000000%3Fstyle%3Dfor-the-badge" />Tailwind CSS<img src="https://www.google.com/search?q=https://img.shields.io/badge/-Tailwind-06B6D4%3Fstyle%3Dfor-the-badge%26logo%3Dtailwindcss%26logoColor%3Dwhite" />DaisyUI<img src="https://www.google.com/search?q=https://img.shields.io/badge/-DaisyUI-1AD1A5%3Fstyle%3Dfor-the-badge" />BackendNode.js<img src="https://www.google.com/search?q=https://img.shields.io/badge/-Node.js-339933%3Fstyle%3Dfor-the-badge%26logo%3Dnode.js%26logoColor%3Dwhite" />Express<img src="https://www.google.com/search?q=https://img.shields.io/badge/-Express-000000%3Fstyle%3Dfor-the-badge%26logo%3Dexpress%26logoColor%3Dwhite" />MongoDB<img src="https://www.google.com/search?q=https://img.shields.io/badge/-MongoDB-47A248%3Fstyle%3Dfor-the-badge%26logo%3Dmongodb%26logoColor%3Dwhite" />Mongoose<img src="https://www.google.com/search?q=https://img.shields.io/badge/-Mongoose-880000%3Fstyle%3Dfor-the-badge" />JWT<img src="https://www.google.com/search?q=https://img.shields.io/badge/-JWT-000000%3Fstyle%3Dfor-the-badge%26logo%3Djsonwebtokens%26logoColor%3Dwhite" />🏁 Getting StartedTo get a local copy up and running, follow these simple steps.PrerequisitesNode.js (v18 or newer)npmMongoDB Atlas account (or a local MongoDB instance)Stream Account (for API Key and Secret)1. Clone the Repositorygit clone [https://github.com/your-username/streamify-chat.git](https://github.com/your-username/streamify-chat.git)
-cd streamify-chat
-2. Configure Environment VariablesThis project requires environment variables for both the frontend and backend.Backend (/backend)Create a .env file in the /backend directory and add the following:# Server Configuration
-PORT=5001
-NODE_ENV=development
+# ✨ Streamify Chat  
+*A full-stack MERN platform for real-time language exchange*  
 
-# MongoDB
-MONGO_URI=your_mongo_db_connection_string
+![Streamify Banner](./path/to/your/banner.png)  
 
-# Stream API
-STEAM_API_KEY=your_stream_api_key
-STEAM_API_SECRET=your_stream_api_secret
+---
 
-# JWT
-JWT_SECRET_KEY=your_super_secret_jwt_key
-Frontend (/frontend)Create a .env file in the /frontend directory and add the following:# Stream API Key (Public)
-VITE_STREAM_API_KEY=your_stream_api_key
-3. Install Dependencies & RunYou can install dependencies and run both servers from the root directory.# Install backend dependencies
-npm install --prefix backend
+## 🎯 Project Overview  
+Streamify Chat is an interactive community platform built for language learners and global communicators. It enables users to:
+- Create a detailed profile including their native language and the language they wish to learn  
+- Discover and connect with ideal language-partners around the world  
+- Chat instantly (text) or hop into HD 1-on-1 video calls  
+- Customize the look and feel of the application with **32 unique themes**  
+- Leverage a modern, scalable tech stack built for real-time performance  
 
-# Install frontend dependencies
-npm install --prefix frontend
-To run both servers concurrently:# Terminal 1: Start the Backend Server
-npm run dev --prefix backend
+Designed to be both fun and effective, Streamify delivers a learning space that feels like a social platform and works like a language practice tool.
 
-# Terminal 2: Start the Frontend Vite Server
-npm run dev --prefix frontend
-Your application should now be running on http://localhost:5173.🗺️ API EndpointsThe backend Express server exposes the following REST API endpoints.MethodEndpointDescriptionProtectedPOST/api/auth/signupRegisters a new user.NoPOST/api/auth/loginLogs in an existing user and sets JWT cookie.NoPOST/api/auth/logoutLogs out the user and clears JWT cookie.NoGET/api/auth/meGets the currently authenticated user.YesPOST/api/auth/onboardingCompletes the user's profile onboarding.YesGET/api/usersGets recommended users for the auth user.YesGET/api/users/friendsGets all friends for the auth user.YesPOST/api/users/friend-request/:idSends a friend request to a user.YesPUT/api/users/friend-request/:id/acceptAccepts a friend request.YesGET/api/users/friend-requestsGets all incoming/accepted friend requests.YesGET/api/users/outgoing-friend-requestsGets all pending outgoing friend requests.YesGET/api/chat/tokenGenerates a Stream token for the auth user.Yes
+---
+
+## 🚀 Core Features  
+- **Secure Authentication** – signup, login, and JWT-based protected routes  
+- **Onboarding Flow** – users define their native and learning languages, bio, location, and preferences  
+- **Smart User Discovery** – browse or get recommended other users who speak your target language  
+- **Friend-Request System** – build connections by sending, accepting, and managing friend requests  
+- **Real-Time Chat** – 1-on-1 messaging with typing indicators, read receipts, and reactions powered by Stream Chat  
+- **HD Video Calling** – seamless video calls using Stream Video SDK directly from chat windows  
+- **UI Theme Switcher** – choose from 32 custom themes built with Tailwind & DaisyUI (state managed with Zustand)  
+- **Modern Tech Stack**  
+  - Frontend: React (via Vite), TanStack Query, Zustand, DaisyUI/Tailwind  
+  - Backend: Node.js + Express, MongoDB/Mongoose, JWT  
+  - Real-time APIs: Stream Chat & Stream Video  
+
+---
+
+## 🧰 Built With  
+- Frontend: **React**, **Vite**, **Tailwind CSS**, **DaisyUI**, **Zustand**, **TanStack Query**  
+- Backend: **Node.js**, **Express**, **MongoDB**, **Mongoose**, **JWT**  
+- Real-time & Communication: **Stream Chat SDK**, **Stream Video SDK**  
+
+---
+
+## 🔧 Getting Started  
+### Prerequisites  
+- Node.js v18 or newer  
+- NPM (or Yarn)  
+- MongoDB Atlas account (or local Mongo DB instance)  
+- Stream account (to obtain API key & secret)  
+
+### Setup Instructions  
+Clone the repository:  
+```bash
+git clone https://github.com/your-username/STREAMIFY-CHAT.git  
+cd STREAMIFY-CHAT
+````
+
+#### Backend Setup (`/backend`)
+
+1. Create a `.env` file in `backend` directory.
+2. Add the following env variables:
+
+   ```env
+   PORT=5001  
+   NODE_ENV=development  
+   MONGO_URI=<your_mongo_connection_string>  
+   STREAM_API_KEY=<your_stream_api_key>  
+   STREAM_API_SECRET=<your_stream_api_secret>  
+   JWT_SECRET_KEY=<your_super_secret_jwt_key>  
+   ```
+3. Install dependencies and start the server:
+
+   ```bash
+   npm install --prefix backend  
+   npm run dev --prefix backend  
+   ```
+
+#### Frontend Setup (`/frontend`)
+
+1. Create a `.env` file in `frontend` directory.
+2. Add the following:
+
+   ```env
+   VITE_STREAM_API_KEY=<your_stream_api_key>  
+   ```
+3. Install dependencies and start the front-end:
+
+   ```bash
+   npm install --prefix frontend  
+   npm run dev --prefix frontend  
+   ```
+4. Open your browser at `http://localhost:5173` (or as indicated) and explore.
+
+---
+
+## 📍 API Endpoints
+
+Here’s a summary of the backend’s major endpoints:
+
+| Method | Endpoint                               | Description                          | Protected |
+| ------ | -------------------------------------- | ------------------------------------ | --------- |
+| POST   | `/api/auth/signup`                     | Register a new user                  | No        |
+| POST   | `/api/auth/login`                      | Login existing user                  | No        |
+| POST   | `/api/auth/logout`                     | Logout & clear JWT cookie            | Yes       |
+| GET    | `/api/auth/me`                         | Retrieve current user                | Yes       |
+| POST   | `/api/auth/onboarding`                 | Complete onboarding profile          | Yes       |
+| GET    | `/api/users`                           | Get recommended users                | Yes       |
+| GET    | `/api/users/friends`                   | List of user’s friends               | Yes       |
+| POST   | `/api/users/friend-request/:id`        | Send a friend request                | Yes       |
+| PUT    | `/api/users/friend-request/:id/accept` | Accept a friend request              | Yes       |
+| GET    | `/api/users/friend-requests`           | Incoming requests                    | Yes       |
+| GET    | `/api/users/outgoing-friend-requests`  | Outgoing requests                    | Yes       |
+| GET    | `/api/chat/token`                      | Generate Stream token for chat/video | Yes       |
+
+---
+
+## ✅ Why This Project Matters
+
+*Language learning thrives on communication.* Many learners feel isolated or lack ready partners—Streamify bridges that gap by turning language practice into a social, real-time experience. By combining chat, video, and smart discovery in one clean app, we’ve fast-tracked the “talk to someone” part of language practice. For devs, it’s also a showcase of how to build a modern, full-stack real-time application using third-party APIs.
+
+---
+
+## 🧠 Future Enhancements
+
+Here are some ideas for the next version:
+
+* Group chats & video rooms (multi-participant)
+* Voice messages & recordings
+* Real-time translation or live caption support
+* Gamification: badges, streaks, challenges
+* Mobile (iOS/Android) version using React Native or Flutter
+* More granular user filters (time zone, proficiency level, interests)
+* Dark/light automatic theme based on system settings
+
+---
+
+## 🙌 Contributing
+
+Contributions, issues and feature-requests are welcome!
+Feel free to check out the [issues](https://github.com/Saairam37/STREAMIFY-CHAT/issues) page first. When you’re ready:
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/my-feature`)
+3. Commit your changes (`git commit -m 'Add some feature'`)
+4. Push to the branch (`git push origin feature/my-feature`)
+5. Open a Pull Request
+
+Please make sure to update tests as appropriate.
+Thanks for helping make Streamify even better!
+
+---
+
+Thanks for checking out Streamify Chat — happy coding & happy learning! 🚀
+
+```
