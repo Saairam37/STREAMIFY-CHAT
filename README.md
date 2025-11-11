@@ -148,5 +148,3 @@ Thanks for helping make Streamify even better!
 ---
 
 Thanks for checking out Streamify Chat — happy coding & happy learning! 🚀
-
-```
