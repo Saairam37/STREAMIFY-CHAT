@@ -1,7 +1,6 @@
 # ✨ Streamify Chat  
 *A full-stack MERN platform for real-time language exchange*  
 
-![Streamify Banner](./path/to/your/banner.png)  
 
 ---
 
